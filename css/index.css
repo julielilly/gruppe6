@@ -1,0 +1,97 @@
+:root {
+  --section: grey;
+  --section-2: lightgrey;
+  --text: black;
+}
+
+/* section 1 */
+
+.front_image {
+  background-color: var(--section-2);
+  height: 400px;
+  width: 100%;
+}
+
+/* section 2 - App */
+
+.app {
+  display: flex;
+  padding: 2rem 0;
+  max-width: 80%;
+  margin: auto;
+  align-items: center;
+}
+
+.vertical_images {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.vertical_images div {
+  background-color: var(--section);
+  width: 100px;
+  height: 100px;
+}
+
+.mockup {
+  width: 40%;
+}
+
+.info {
+  padding-left: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* section 3 */
+
+.section_3 {
+  background-color: var(--section-2);
+  display: flex;
+  align-items: center;
+  padding-right: 4rem;
+}
+
+.section_3_image {
+  background-color: var(--section);
+  width: 4000px;
+  height: 500px;
+}
+
+/* section 4 */
+
+.section_4 {
+  padding: 6rem 0;
+}
+
+.section_4 .info {
+  text-align: center;
+  max-width: 60%;
+  margin: auto;
+}
+
+.images {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
+.image {
+  background-color: var(--section);
+  width: 300px;
+  height: 400px;
+}
+
+.image_container {
+  position: relative;
+}
+
+.image_container h2 {
+  position: absolute;
+  left: 45%;
+  padding-top: 1rem;
+}
