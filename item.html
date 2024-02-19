@@ -28,42 +28,47 @@
         <article id="categories">
             <h1>H1</h1>
             <div class="categories">
-                <div class="category">
+
+                <a class="category" href="item.html">
                     <h2>Waterways</h2>
-                    <div class="image"></div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                </div>
-                <div class="category">
+                    <img class="image" src="https://vildmad.dk/application/files/9214/9796/4852/Strandeng-color.jpg"
+                        alt="beach">
+                    <p>By the seaside, you’ll find salt marshes and beaches with seaweed and herbs. By freshwater
+                        lakes,
+                        streams, and rivers, herbs and flowers grow.</p>
+                </a>
+                <a class="category" href="item.html">
                     <h2>Open land</h2>
-                    <div class="image"></div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                </div>
-                <div class="category">
+                    <img class="image" src="https://vildmad.dk/application/files/4514/9796/4850/Hegnet-color.jpg"
+                        alt="open land">
+                    <p>In the open landscape, you’ll find hedgerows, field drains, and grasslands, with an abundance
+                        of
+                        herbs, nuts, fruits, and berries. </p>
+                </a>
+                <a class="category" href="item.html">
                     <h2>Forests</h2>
-                    <div class="image"></div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                </div>
-                <div class="category">
+                    <img class="image" src="https://vildmad.dk/application/files/3614/9796/4850/Lovskov-color.jpg"
+                        alt="forest">
+                    <p>In coniferous and deciduous forests, you’ll find mushrooms, edible leaves, shoots, herbs,
+                        berries, and nuts.</p>
+                </a>
+                <a class="category" href="item.html">
                     <h2>Cities and Towns</h2>
-                    <div class="image"></div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                </div>
+                    <img class="image" src="https://vildmad.dk/application/files/3314/9796/4854/Byen-fuld-ret.jpg"
+                        alt="town">
+                    <p>In urban parks, harbors, and greenspaces, you’ll find herbs, fruits, nuts, and berries.</p>
+                </a>
+
             </div>
         </article>
 
         <article id="picture_wheel">
             <h1>H1</h1>
             <div class="item_container">
-                <img class="item" src="https://vildmad.dk/application/files/9414/9036/4754/dovnaelde.jpg" alt="">
-                <img class="item" src="https://vildmad.dk/application/files/9414/9036/4754/dovnaelde.jpg" alt="">
-                <img class="item" src="https://vildmad.dk/application/files/9414/9036/4754/dovnaelde.jpg" alt="">
-                <img class="item" src="https://vildmad.dk/application/files/9414/9036/4754/dovnaelde.jpg" alt="">
-                <img class="item" src="https://vildmad.dk/application/files/9414/9036/4754/dovnaelde.jpg" alt="">
-                <img class="item" src="https://vildmad.dk/application/files/9414/9036/4754/dovnaelde.jpg" alt="">
-                <img class="item" src="https://vildmad.dk/application/files/9414/9036/4754/dovnaelde.jpg" alt="">
-                <img class="item" src="https://vildmad.dk/application/files/9414/9036/4754/dovnaelde.jpg" alt="">
-                <img class="item" src="https://vildmad.dk/application/files/9414/9036/4754/dovnaelde.jpg" alt="">
-                <img class="item" src="https://vildmad.dk/application/files/9414/9036/4754/dovnaelde.jpg" alt="">
+                <template id="item_list_template">
+                    <a href="item.html"><img class="item"
+                            src="https://vildmad.dk/application/files/9414/9036/4754/dovnaelde.jpg" alt=""></a>
+                </template>
             </div>
         </article>
 
@@ -71,8 +76,9 @@
             <div class="item_main_info">
                 <img class="item" src="https://vildmad.dk/application/files/9414/9036/4754/dovnaelde.jpg" alt="">
                 <div class="main_info_text">
-                    <h1>H1</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, quis! Similique et, error
+                    <h1 class="title">H1</h1>
+                    <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, quis!
+                        Similique et, error
                         impedit recusandae optio reiciendis dolorum nulla maxime aut voluptatum perferendis suscipit,
                         nihil voluptas, magni vitae. Officia, at!</p>
                     <div class="icons">
@@ -81,6 +87,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="item_deep_info">
                 <div class="item_header">
                     <h3>H3</h3>
@@ -89,31 +96,36 @@
                 </div>
                 <div class="info_sections">
                     <div class="info_section">
-                        <h3>H3</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam harum ratione sequi. A
+                        <h3>WHERE TO FIND IT</h3>
+                        <p class="where">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam harum
+                            ratione sequi. A
                             quae quam, earum cumque magnam facere voluptas aut debitis, velit eum voluptatem tenetur
                             amet explicabo doloribus repudiandae.</p>
                     </div>
                     <div class="info_section">
-                        <h3>H3</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam harum ratione sequi. A
+                        <h3>WHEN TO FIND IT</h3>
+                        <p class="when">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam harum ratione
+                            sequi. A
                             quae quam, earum cumque magnam facere voluptas aut debitis, velit eum voluptatem tenetur
                             amet explicabo doloribus repudiandae.</p>
                     </div>
                     <div class="info_section">
-                        <h3>H3</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam harum ratione sequi. A
+                        <h3>HOW TO SPOT IT</h3>
+                        <p class="how_spot">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam harum
+                            ratione sequi. A
                             quae quam, earum cumque magnam facere voluptas aut debitis, velit eum voluptatem tenetur
                             amet explicabo doloribus repudiandae.</p>
                     </div>
                     <div class="info_section">
-                        <h3>H3</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam harum ratione sequi. A
+                        <h3>HOW TO PICK IT</h3>
+                        <p class="how_pick">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam harum
+                            ratione sequi. A
                             quae quam, earum cumque magnam facere voluptas aut debitis, velit eum voluptatem tenetur
                             amet explicabo doloribus repudiandae.</p>
                     </div>
                 </div>
             </div>
+
         </article>
 
     </main>
