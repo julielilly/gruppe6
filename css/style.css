@@ -5,8 +5,31 @@
 }
 
 :root {
-  --section: grey;
-  --text: black;
+  --yellow: #fffbec;
+  --green: #376130;
+  --pink: #e9aca7;
+  --orange: #f3b142;
+}
+h1 {
+  font-size: 3rem;
+}
+
+h1,
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+p,
+a,
+li {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
 }
 
 ul,
@@ -15,10 +38,15 @@ a {
   text-decoration: none;
 }
 
+body {
+  margin-top: 100px;
+}
+
 /* footer */
 
 footer {
-  background-color: var(--section-2);
+  background-color: var(--orange);
+  color: var(--green);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -51,6 +79,11 @@ footer ul img {
 /* header */
 
 header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: var(--orange);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -64,8 +97,11 @@ header ul {
 }
 
 header ul li {
-  background-color: var(--section-2);
+  background-color: var(--orange);
   text-align: center;
   padding: 0.5rem 0;
   width: 6rem;
+}
+header ul li a {
+  color: var(--green);
 }

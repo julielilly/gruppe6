@@ -6,123 +6,173 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vild Mad</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/item.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
 
     <header>
         <ul>
-            <li>text</li>
-            <li>text</li>
+            <li><a href="index.html">Main</a></li>
+            <li><a href="item.html">Herb library</a></li>
         </ul>
         <p>logo</p>
         <ul>
-            <li>text</li>
-            <li>text</li>
+            <li><a href="">Recipes</a></li>
+            <li><a href="about.html">About</a></li>
         </ul>
     </header>
 
     <main>
-        <article>
-            <div class="front_image"></div>
+
+        <article id="categories">
+            <h1>Landscapes</h1>
+            <div class="categories">
+
+                <a class="category" href="item.html">
+                    <h2>Waterways</h2>
+                    <img class="image" src="https://vildmad.dk/application/files/9214/9796/4852/Strandeng-color.jpg"
+                        alt="beach">
+                    <p>By the seaside, you’ll find salt marshes and beaches with seaweed and herbs. By freshwater
+                        lakes,
+                        streams, and rivers, herbs and flowers grow.</p>
+                </a>
+                <a class="category" href="item.html">
+                    <h2>Open land</h2>
+                    <img class="image" src="https://vildmad.dk/application/files/4514/9796/4850/Hegnet-color.jpg"
+                        alt="open land">
+                    <p>In the open landscape, you’ll find hedgerows, field drains, and grasslands, with an abundance
+                        of
+                        herbs, nuts, fruits, and berries. </p>
+                </a>
+                <a class="category" href="item.html">
+                    <h2>Forests</h2>
+                    <img class="image" src="https://vildmad.dk/application/files/3614/9796/4850/Lovskov-color.jpg"
+                        alt="forest">
+                    <p>In coniferous and deciduous forests, you’ll find mushrooms, edible leaves, shoots, herbs,
+                        berries, and nuts.</p>
+                </a>
+                <a class="category" href="item.html">
+                    <h2>Cities and Towns</h2>
+                    <img class="image" src="https://vildmad.dk/application/files/3314/9796/4854/Byen-fuld-ret.jpg"
+                        alt="town">
+                    <p>In urban parks, harbors, and greenspaces, you’ll find herbs, fruits, nuts, and berries.</p>
+                </a>
+
+            </div>
         </article>
 
-        <article class="app">
-            <img class="mockup" src="https://vildmad.dk/application/files/2216/5598/3249/Web-mockup.png"
-                alt="vildmad app">
-            <div class="vertical_images">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-            <div class="info">
-                <h1>H1</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit aliquid sunt id molestiae, veritatis
-                    fugit? Commodi sequi at hic dolorum voluptas, ipsa consequatur blanditiis. In ad culpa at vero nemo.
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique enim accusantium inventore
-                    reprehenderit, labore iste vel aliquam architecto nobis quaerat, expedita sunt minus aspernatur
-                    ipsam blanditiis? Esse consectetur assumenda voluptas!
-                </p>
+        <article id="picture_wheel">
+            <h1>Herb library</h1>
+            <div class="item_container">
+                <template id="item_list_template">
+                    <a href="item.html"><img class="item"
+                            src="https://vildmad.dk/application/files/9414/9036/4754/dovnaelde.jpg" alt=""></a>
+                </template>
             </div>
         </article>
 
-        <article class="section_3">
-            <div class="section_3_image"></div>
-            <div class="info">
-                <h1>H1</h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa, doloribus hic? Quibusdam eum aperiam
-                    corrupti, inventore nostrum consectetur cupiditate esse suscipit culpa soluta numquam, est quo.
-                    Doloremque, numquam aliquid. Incidunt! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
-                    impedit deleniti veniam, expedita totam, odit beatae error temporibus possimus corporis accusantium
-                    in consectetur reprehenderit earum perferendis eius ullam assumenda ratione?</p>
+        <article id="item">
+            <div class="item_main_info">
+                <img class="item" src="https://vildmad.dk/application/files/9414/9036/4754/dovnaelde.jpg" alt="">
+                <div class="main_info_text">
+                    <h1 class="title">H1</h1>
+                    <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, quis!
+                        Similique et, error
+                        impedit recusandae optio reiciendis dolorum nulla maxime aut voluptatum perferendis suscipit,
+                        nihil voluptas, magni vitae. Officia, at!</p>
+                    <div class="icons">
+                        <img src="img/🦆 icon _bookmark_.svg" alt="bookmark">
+                        <img src="img/🦆 icon _print_.svg" alt="print icon">
+                    </div>
+                </div>
             </div>
-        </article>
 
-        <article class="section_4">
-            <div class="info">
-                <h1>H1</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae error suscipit cumque dolore
-                    nihil
-                    commodi veniam laborum? Nemo expedita ut, nisi quas minus labore consectetur. Provident illum
-                    repudiandae expedita itaque?</p>
+            <div class="item_deep_info">
+                <div class="item_header">
+                    <h3>H3</h3>
+                    <h3>H3</h3>
+                    <h3>H3</h3>
+                </div>
+                <div class="info_sections">
+                    <div class="info_section">
+                        <h3>WHERE TO FIND IT</h3>
+                        <p class="where">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam harum
+                            ratione sequi. A
+                            quae quam, earum cumque magnam facere voluptas aut debitis, velit eum voluptatem tenetur
+                            amet explicabo doloribus repudiandae.</p>
+                    </div>
+                    <div class="info_section">
+                        <h3>WHEN TO FIND IT</h3>
+                        <p class="when">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam harum ratione
+                            sequi. A
+                            quae quam, earum cumque magnam facere voluptas aut debitis, velit eum voluptatem tenetur
+                            amet explicabo doloribus repudiandae.</p>
+                    </div>
+                    <div class="info_section">
+                        <h3>HOW TO SPOT IT</h3>
+                        <p class="how_spot">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam harum
+                            ratione sequi. A
+                            quae quam, earum cumque magnam facere voluptas aut debitis, velit eum voluptatem tenetur
+                            amet explicabo doloribus repudiandae.</p>
+                    </div>
+                    <div class="info_section">
+                        <h3>HOW TO PICK IT</h3>
+                        <p class="how_pick">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam harum
+                            ratione sequi. A
+                            quae quam, earum cumque magnam facere voluptas aut debitis, velit eum voluptatem tenetur
+                            amet explicabo doloribus repudiandae.</p>
+                    </div>
+                </div>
             </div>
-            <div class="images">
-                <div class="image_container">
-                    <h2>H2</h2>
-                    <div class="image"></div>
-                </div>
-                <div class="image_container">
-                    <h2>H2</h2>
-                    <div class="image"></div>
-                </div>
-                <div class="image_container">
-                    <h2>H2</h2>
-                    <div class="image"></div>
-                </div>
-            </div>
+
         </article>
 
     </main>
 
+
     <footer>
         <div>
-            <h3>H3</h3>
+            <h3>Developed in partnership with</h3>
             <ul>
-                <li><a href="https://outdooradventure.dk/blog/sanketur"><img
+                <li><a href="https://outdooradventure.dk/blog/sanketur" target="_blank"><img
                             src="https://vildmad.dk/application/themes/vildmad/img/footer-logos/byhost.png"
                             alt="outdooradventure"></a>
                 </li>
-                <li><a href="https://naturvejledningdanmark.dk/"><img
+                <li><a href="https://naturvejledningdanmark.dk/" target="_blank"><img
                             src="https://vildmad.dk/application/themes/vildmad/img/footer-logos/natur.png"
                             alt="naturvejledningdanmark"></a></li>
-                <li><a href="https://gojoin.dk/"><img
+                <li><a href="https://gojoin.dk/" target="_blank"><img
                             src="https://vildmad.dk/application/themes/vildmad/img/footer-logos/gojoin.png"
                             alt="gojoin"></a></li>
-                <li><a href="https://tombolacph.dk/"><img
+                <li><a href="https://tombolacph.dk/" target="_blank"><img
                             src="https://vildmad.dk/application/themes/vildmad/img/footer-logos/tombola.png"
                             alt="tombolacph"></a></li>
-                <li><a href="https://friluftsraadet.dk/"><img
+                <li><a href="https://friluftsraadet.dk/" target="_blank"><img
                             src="https://vildmad.dk/application/themes/vildmad/img/footer-logos/friluft.png"
                             alt="friluftsraadet"></a></li>
-
-                <li><a href="https://supertusch.dk/"><img id="supertusch"
+                <li><a href="https://supertusch.dk/" target="_blank"><img id="supertusch"
                             src="https://vildmad.dk/application/themes/vildmad/img/footer-logos/supertusch.png"
                             alt="supertusch"></a></li>
 
             </ul>
         </div>
         <div class="icons">
-            <a href="https://www.facebook.com/vildmaddk"><img src="img/Platform=Facebook, Color=Negative.svg"
-                    alt="facebook"></a>
-            <a href="https://www.instagram.com/vildmaddk/"><img src="img/Platform=Instagram, Color=Negative.svg"
-                    alt="instagram"></a>
+            <a href="https://www.facebook.com/vildmaddk" target="_blank"><img
+                    src="img/Platform=Facebook, Color=Negative.svg" alt="facebook"></a>
+            <a href="https://www.instagram.com/vildmaddk/" target="_blank"><img
+                    src="img/Platform=Instagram, Color=Negative.svg" alt="instagram"></a>
 
         </div>
     </footer>
 
 </body>
 
-<script src="js/index.js"></script>
+<script src="js/item.js"></script>
 
 </html>

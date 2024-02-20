@@ -1,0 +1,42 @@
+:root {
+  --yellow: #fffbec;
+  --green: #376130;
+  --pink: #e9aca7;
+  --orange: #f3b142;
+}
+
+#about,
+#contact {
+  background-color: var(--yellow);
+  color: var(--green);
+  display: flex;
+  align-items: center;
+  padding-right: 10rem;
+}
+
+.about_image {
+  width: 56%;
+  height: auto;
+}
+
+#about ul li {
+  padding-bottom: 1rem;
+}
+
+.info {
+  padding-left: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  line-height: 1.5rem;
+}
+
+#contact {
+  background-color: transparent;
+  justify-content: space-around;
+  padding: 4rem 2rem;
+}
+
+#contact img {
+  width: 30%;
+}

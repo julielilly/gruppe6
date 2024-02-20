@@ -1,15 +1,21 @@
 :root {
-  --section: grey;
-  --section-2: lightgrey;
-  --text: black;
+  --yellow: #fffbec;
+  --green: #376130;
+  --pink: #e9aca7;
+  --orange: #f3b142;
 }
 
 /* section 1 - categories */
 
 #categories {
-  background-color: var(--section-2);
+  background-color: var(--yellow);
   text-align: center;
   padding: 4rem 0;
+}
+
+#categories a,
+#categories h1 {
+  color: var(--green);
 }
 
 #categories .image {
@@ -37,13 +43,14 @@
 /* section 2 - picture_wheel */
 
 #picture_wheel {
-  padding: 4rem 0;
-  max-width: 90%;
-  margin: auto;
+  padding: 5rem 10%;
+  width: 100%;
+  background-color: var(--green);
+  color: var(--pink);
 }
 
 #picture_wheel h1 {
-  padding-bottom: 4rem;
+  padding-bottom: 1.5rem;
 }
 
 .item_container {
@@ -54,7 +61,6 @@
   width: 100%;
   overflow-x: auto;
   padding: 2rem;
-  background-color: var(--section-2);
 }
 
 .item {
@@ -66,10 +72,10 @@
 ::-webkit-scrollbar {
   height: 10px;
   width: 5px;
-  background: rgb(255, 255, 255, 0.7);
+  background: var(--green);
 }
 ::-webkit-scrollbar-thumb {
-  background: rgb(38, 24, 23, 0.5);
+  background: var(--pink);
   border-radius: 10px;
 }
 
@@ -79,6 +85,7 @@
   padding: 4rem 0;
   max-width: 70%;
   margin: auto;
+  color: var(--green);
 }
 
 #item .item {
@@ -107,12 +114,12 @@
 
 .item_deep_info {
   margin-top: 2rem;
-  background-color: var(--section-2);
-  border: solid 1px var(--text);
+  background-color: var(--yellow);
+  border: solid 1px var(--green);
 }
 
 .item_header {
-  border-bottom: solid 1px var(--text);
+  border-bottom: solid 1px var(--green);
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -123,7 +130,7 @@
 }
 
 .item_header h3:not(:nth-of-type(3)) {
-  border-right: solid 1px var(--text);
+  border-right: solid 1px var(--green);
 }
 
 .info_sections {
