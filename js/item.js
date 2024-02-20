@@ -25,15 +25,10 @@ function showItem(item) {
   const copy = template.cloneNode(true);
 
   //ændre indhold liste
-  /* virker ikke
-  copy.querySelector("img").src = `https://qnfvvoacumskcnxowsik.supabase.co/rest/v1/vild_mad?apikey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFuZnZ2b2FjdW1za2NueG93c2lrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDc5MDE4MzQsImV4cCI6MjAyMzQ3NzgzNH0.QE7-n-xKzpvWgnKjIi24azceWh3Jti73mPJyJ-1kLwc&select=image${item.id}`;
-  */
+  copy.querySelector("img").src = item.image;
 
   //ændre indhold item
-
-  /* virker ikke
-  document.querySelector("img").src = `https://qnfvvoacumskcnxowsik.supabase.co/rest/v1/vild_mad?apikey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFuZnZ2b2FjdW1za2NueG93c2lrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDc5MDE4MzQsImV4cCI6MjAyMzQ3NzgzNH0.QE7-n-xKzpvWgnKjIi24azceWh3Jti73mPJyJ-1kLwc&select=image${item.id}`;
-  */
+  document.querySelector("img").src = item.image;
 
   document.querySelector(".title").textContent = item.name;
   document.querySelector(".about").textContent = item.description;
