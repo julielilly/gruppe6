@@ -105,3 +105,11 @@ header ul li {
 header ul li a {
   color: var(--green);
 }
+
+a:hover {
+  color: black;
+}
+
+header .Logo {
+  width: 100px;
+}
