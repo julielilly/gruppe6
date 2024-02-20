@@ -25,10 +25,10 @@ function showItem(item) {
   const copy = template.cloneNode(true);
 
   //ændre indhold liste
-  copy.querySelector("img").src = item.image;
+  copy.querySelector(".item").src = item.image;
 
   //ændre indhold item
-  document.querySelector("img").src = item.image;
+  document.querySelector(".item_main_info img").src = item.image;
 
   document.querySelector(".title").textContent = item.name;
   document.querySelector(".about").textContent = item.description;
