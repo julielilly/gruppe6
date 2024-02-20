@@ -5,6 +5,12 @@
   --orange: #f3b142;
 }
 
+.info {
+  color: var(--green);
+  padding-top: 2rem;
+  padding-left: 4rem;
+  padding-right: 4rem;}
+
 /* section 1 - categories */
 
 #categories {
