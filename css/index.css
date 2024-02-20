@@ -69,6 +69,7 @@
 
 .section_3_image {
   width: 50%;
+  display: block;
   height: auto;
 }
 
