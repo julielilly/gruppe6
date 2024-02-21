@@ -29,6 +29,7 @@
   flex-direction: column;
   gap: 3rem;
   line-height: 1.5rem;
+  padding-top: 5%;
 }
 
 #contact {
@@ -39,6 +40,32 @@
 
 #contact img {
   width: 30%;
+}
+
+@media (max-width: 1250px) {
+  #about,
+  #contact {
+    background-color: var(--yellow);
+    color: var(--green);
+    display: flex;
+    align-items: center;
+    padding-right: 5rem;
+  }
+}
+
+@media (max-width: 1150px) {
+  #about,
+  #contact {
+    background-color: var(--yellow);
+    color: var(--green);
+    display: flex;
+    align-items: center;
+    padding-right: 2rem;
+  }
+
+  .info {
+    padding-left: 2rem;
+  }
 }
 
 @media (min-width: 901px) {

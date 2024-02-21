@@ -138,6 +138,7 @@ header ul li a {
 
 a:hover {
   color: black;
+  font-size: 1.05rem;
 }
 
 header .Logo {

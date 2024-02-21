@@ -18,14 +18,14 @@
 
 .front_image h1 {
   font-family: "Nunito", sans-serif;
-  font-size: 5rem;
+  font-size: 4rem;
   color: var(--green);
   font-weight: 300;
-  padding-top: 4%;
+  padding-top: 5%;
 }
 
 .blomster_planet {
-  padding-top: 2%;
+  padding-top: 3%;
   width: 700px;
   height: auto;
 }
@@ -33,13 +33,17 @@
 .grid_1-1-1 {
   display: grid;
   grid-template-columns: 1fr 0.5fr 1fr;
-  max-width: 80%;
+  max-width: 87%;
 }
 
 .grid_1-1-1 div {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.grid_1-1-1 p {
+  max-width: 80%;
 }
 
 .lille_plante {
@@ -60,10 +64,17 @@
 
 .app {
   display: flex;
+  display: grid;
+  grid-template-columns: 1fr 10fr;
   padding: 2rem 0;
-  max-width: 80%;
+  max-width: 90%;
   margin: auto;
   align-items: center;
+}
+
+.mockup_n_apps {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .app .vertical_images {
@@ -73,15 +84,12 @@
   justify-content: center;
 }
 
-.vertical_images div {
-  background-color: var(--green);
-  width: 100px;
-  height: 100px;
+.vertical_images img {
+  width: 90px;
 }
 
 .mockup {
-  width: 100%;
-  max-height: 800px;
+  max-width: 350px;
 }
 
 .info {
@@ -168,4 +176,112 @@
   transform: translateX(-50%);
   padding-top: 1rem;
   z-index: 1;
+}
+
+@media (max-width: 1050px) {
+  .info h1 {
+    font-size: 2rem;
+  }
+
+  /* section 4 */
+  .image {
+    background-color: var(--section);
+    width: 250px;
+    height: 350px;
+  }
+}
+
+@media (max-width: 900px) {
+  .front_image h1 {
+    padding-top: 10%;
+    font-size: 3rem;
+  }
+
+  .blomster_planet {
+    padding-top: 6%;
+    width: 650px;
+  }
+
+  .grid_1-1-1 p {
+    font-size: 0.9rem;
+    max-width: 100%;
+  }
+
+  .lille_plante {
+    width: 40px;
+  }
+
+  .grid_1-1-1 h3 {
+    font-size: 2rem;
+  }
+
+  .pil {
+    width: 25px;
+    padding-bottom: 1%;
+  }
+
+  /* section 2 - App */
+
+  .app {
+    display: block;
+  }
+
+  .vertical_images img {
+    width: 120px;
+  }
+
+  .app .vertical_images {
+    justify-content: flex-start;
+    padding-top: 9%;
+  }
+
+  .mockup {
+    max-width: 400px;
+  }
+
+  .mockup_n_apps {
+    display: flex;
+    justify-content: center;
+  }
+
+  .info {
+    padding-left: 2rem;
+  }
+
+  /* section 3 */
+
+  .section_3_image {
+    width: 50%;
+    display: block;
+    height: auto;
+  }
+
+  .section_3 {
+    display: grid;
+    justify-items: center;
+    padding-top: 4%;
+  }
+
+  .section_3 h1 {
+    font-size: 1.5rem;
+  }
+
+  .section_3 {
+    padding-right: 0rem;
+  }
+
+  .section_3 .info {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-right: 5%;
+  }
+
+  /* section 4 */
+
+  .images {
+    display: grid;
+    gap: 3rem;
+    justify-content: center;
+    padding-top: 2rem;
+  }
 }
