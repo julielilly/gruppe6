@@ -157,11 +157,11 @@ input::placeholder {
   width: 40%;
 }
 
-.main_info_text .icons {
+.main_info_text .marks {
   justify-content: end;
   align-self: end;
 }
-.icons img {
+.marks img {
   width: 1.5rem;
   height: 1.5rem;
   cursor: pointer;
