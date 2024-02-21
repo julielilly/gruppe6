@@ -16,17 +16,34 @@
 
 <body>
 
-    <header>
+    <header class="desktop">
         <ul>
             <li><a href="index.html">Main</a></li>
             <li><a href="item.html">Herb library</a></li>
         </ul>
-        <p>logo</p>
+        <a href="index.html"><img src="img/logo.svg" alt="logo" class="logo"></a>
         <ul>
             <li><a href="">Recipes</a></li>
             <li><a href="about.html">About</a></li>
         </ul>
     </header>
+
+    <header class="mobile">
+        <a href="index.html"><img src="img/logo.svg" alt="logo" class="logo"></a>
+        <button class="hamburger">
+            <img class="menu_icon" src="img/menu_icon.svg" alt="menu icon">
+            <img class="close_icon" src="img/close_icon.svg" alt="close icon">
+        </button>
+    </header>
+
+    <div class="menu mobile">
+        <ul>
+            <li><a href="index.html">Main</a></li>
+            <li><a href="item.html">Herb library</a></li>
+            <li><a href="">Recipes</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </div>
 
     <main>
 
@@ -191,5 +208,6 @@
 </body>
 
 <script src="js/item.js"></script>
+<script src="js/index.js"></script>
 
 </html>
