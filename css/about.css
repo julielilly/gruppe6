@@ -40,3 +40,39 @@
 #contact img {
   width: 30%;
 }
+
+@media (min-width: 901px) {
+  .mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .desktop {
+    display: none;
+  }
+
+  #about,
+  #contact {
+    padding: 4rem 0 0 0;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .about_image {
+    width: 100%;
+  }
+
+  .info {
+    padding: 2rem 3rem;
+  }
+
+  #contact {
+    padding: 4rem 2rem;
+  }
+
+  #contact img {
+    width: 70%;
+  }
+}

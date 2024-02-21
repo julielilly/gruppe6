@@ -1,15 +1,29 @@
-// https://qnfvvoacumskcnxowsik.supabase.co
-// eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFuZnZ2b2FjdW1za2NueG93c2lrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDc5MDE4MzQsImV4cCI6MjAyMzQ3NzgzNH0.QE7-n-xKzpvWgnKjIi24azceWh3Jti73mPJyJ-1kLwc
+window.addEventListener("load", sidenVises);
 
-fetch("https://qnfvvoacumskcnxowsik.supabase.co/rest/v1/vild_mad", {
-  method: "GET",
-  headers: {
-    apikey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFuZnZ2b2FjdW1za2NueG93c2lrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDc5MDE4MzQsImV4cCI6MjAyMzQ3NzgzNH0.QE7-n-xKzpvWgnKjIi24azceWh3Jti73mPJyJ-1kLwc",
-  },
-})
-  .then((res) => res.json())
-  .then(showData);
+function sidenVises() {
+  console.log(sidenVises);
 
-function showData(items) {
-  console.log(items);
+  //viser menu icon
+  document.querySelector(".menu_icon").classList.remove("hide");
+
+  //skjuler menu
+  document.querySelector(".close_icon").classList.add("hide");
+  document.querySelector(".menu").classList.add("hide");
+
+  //sætter klik på menu knap
+  document.querySelector(".menu_icon").addEventListener("click", toggleMenu);
+}
+
+function toggleMenu() {
+  console.log(toggleMenu);
+
+  //skjuler menu icon
+  document.querySelector(".menu_icon").classList.add("hide");
+  document.querySelector(".close_icon").classList.remove("hide");
+
+  //viser menu
+  document.querySelector(".menu").classList.remove("hide");
+
+  //sætter klik på closeIcon
+  document.querySelector(".close_icon").addEventListener("click", sidenVises);
 }

@@ -39,7 +39,7 @@ a {
 }
 
 body {
-  margin-top: 100px;
+  margin-top: 6rem;
 }
 
 /* footer */
@@ -47,9 +47,8 @@ body {
 footer {
   background-color: var(--orange);
   color: var(--green);
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
   align-items: center;
   padding: 2rem 4rem;
 }
@@ -59,12 +58,15 @@ footer ul,
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  max-width: 800px;
   gap: 2rem;
+}
+.icons {
+  justify-content: end;
 }
 
 footer h3 {
   padding-bottom: 1rem;
+  grid-column: span 2;
 }
 
 footer ul img {
@@ -74,6 +76,34 @@ footer ul img {
 
 #supertusch {
   height: 1.5rem;
+}
+
+@media (max-width: 900px) {
+  footer {
+    grid-template-columns: 1fr fr;
+    align-items: end;
+    padding: 2rem 1rem;
+  }
+
+  footer ul,
+  .icons {
+    display: flex;
+    width: 80%;
+    gap: 1rem;
+  }
+
+  .icons img {
+    width: 2.5rem;
+  }
+
+  footer ul img {
+    height: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  #supertusch {
+    height: 1.2rem;
+  }
 }
 
 /* header */
@@ -106,10 +136,62 @@ header ul li a {
   color: var(--green);
 }
 
+<<<<<<< HEAD
 a:hover {
   color: black;
 }
 
 header .Logo {
   width: 100px;
+=======
+.logo {
+  height: 2.5rem;
+}
+
+/* burgermenu */
+
+@media (min-width: 901px) {
+  .mobile {
+    display: none;
+  }
+}
+@media (max-width: 900px) {
+  header {
+    padding: 1rem 2rem;
+  }
+  body {
+    margin-top: 4rem;
+  }
+}
+
+.hide {
+  display: none;
+}
+.hamburger img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.hamburger {
+  background: none;
+  cursor: pointer;
+  border: none;
+  float: right;
+}
+.menu {
+  position: fixed;
+  text-align: center;
+  padding-top: 3rem;
+  z-index: 1;
+  width: 100%;
+  height: 91%;
+  background-color: var(--orange);
+}
+
+.menu ul li a {
+  color: var(--green);
+  font-size: 1.3rem;
+}
+.menu ul li {
+  padding-bottom: 1.5rem;
+>>>>>>> 43b8c428c23b9168153c9ea5d5a1308f5b417bbc
 }

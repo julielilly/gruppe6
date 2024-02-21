@@ -16,21 +16,38 @@
 
 <body>
 
-    <header>
+    <header class="desktop">
         <ul>
             <li><a href="index.html">Main</a></li>
             <li><a href="item.html">Herb library</a></li>
         </ul>
-        <p>logo</p>
+        <a href="index.html"><img src="img/logo.svg" alt="logo" class="logo"></a>
         <ul>
             <li><a href="">Recipes</a></li>
             <li><a href="about.html">About</a></li>
         </ul>
     </header>
 
+    <header class="mobile">
+        <a href="index.html"><img src="img/logo.svg" alt="logo" class="logo"></a>
+        <button class="hamburger">
+            <img class="menu_icon" src="img/menu_icon.svg" alt="menu icon">
+            <img class="close_icon" src="img/close_icon.svg" alt="close icon">
+        </button>
+    </header>
+
+    <div class="menu mobile">
+        <ul>
+            <li><a href="index.html">Main</a></li>
+            <li><a href="item.html">Herb library</a></li>
+            <li><a href="">Recipes</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </div>
+
     <main>
         <article id="about">
-            <img src="img/About_desktop.webp" alt="hands" class="about_image">
+            <img src="img/About_desktop.webp" alt="hands" class="about_image desktop">
             <div class="info">
                 <h1>About</h1>
                 <ul>
@@ -53,6 +70,7 @@
                         our Vild Mad mediators if you want a breath of fresh air in your teaching.</li>
                 </ul>
             </div>
+            <img class="about_image mobile" src="img/About_mobile.webp" alt="hands">
         </article>
 
         <article id="contact">
@@ -73,8 +91,9 @@
     </main>
 
     <footer>
+        <h3>Developed in partnership with</h3>
         <div>
-            <h3>Developed in partnership with</h3>
+
             <ul>
                 <li><a href="https://outdooradventure.dk/blog/sanketur" target="_blank"><img
                             src="https://vildmad.dk/application/themes/vildmad/img/footer-logos/byhost.png"
@@ -107,6 +126,7 @@
         </div>
     </footer>
 
+    <script src="js/index.js"></script>
 </body>
 
 </html>

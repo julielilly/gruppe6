@@ -16,25 +16,45 @@
 
 <body>
 
-    <header>
+    <header class="desktop">
         <ul>
             <li><a href="index.html">Main</a></li>
             <li><a href="item.html">Herb library</a></li>
         </ul>
-        <p>logo</p>
+        <a href="index.html"><img src="img/logo.svg" alt="logo" class="logo"></a>
         <ul>
             <li><a href="">Recipes</a></li>
             <li><a href="about.html">About</a></li>
         </ul>
     </header>
 
+    <header class="mobile">
+        <a href="index.html"><img src="img/logo.svg" alt="logo" class="logo"></a>
+        <button class="hamburger">
+            <img class="menu_icon" src="img/menu_icon.svg" alt="menu icon">
+            <img class="close_icon" src="img/close_icon.svg" alt="close icon">
+        </button>
+    </header>
+
+    <div class="menu mobile">
+        <ul>
+            <li><a href="index.html">Main</a></li>
+            <li><a href="item.html">Herb library</a></li>
+            <li><a href="">Recipes</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </div>
+
     <main>
 
         <article id="categories">
-            <h1>Landscapes</h1>
+            <h1>Herb library</h1>
+            <p class="info">Below you'll find a reference guide to the wild ingredients of the Danish landscape. You can
+                sort by landscape. Each ingredient is described in detail, including their natural habitat, taste,
+                aroma, and how to use them in the kitchen.</p>
             <div class="categories">
 
-                <a class="category" href="item.html">
+                <a class="category" href="item.html?category=waterways">
                     <h2>Waterways</h2>
                     <img class="image" src="https://vildmad.dk/application/files/9214/9796/4852/Strandeng-color.jpg"
                         alt="beach">
@@ -42,7 +62,7 @@
                         lakes,
                         streams, and rivers, herbs and flowers grow.</p>
                 </a>
-                <a class="category" href="item.html">
+                <a class="category" href="item.html?category=open">
                     <h2>Open land</h2>
                     <img class="image" src="https://vildmad.dk/application/files/4514/9796/4850/Hegnet-color.jpg"
                         alt="open land">
@@ -50,14 +70,14 @@
                         of
                         herbs, nuts, fruits, and berries. </p>
                 </a>
-                <a class="category" href="item.html">
+                <a class="category" href="item.html?category=forests">
                     <h2>Forests</h2>
                     <img class="image" src="https://vildmad.dk/application/files/3614/9796/4850/Lovskov-color.jpg"
                         alt="forest">
                     <p>In coniferous and deciduous forests, you’ll find mushrooms, edible leaves, shoots, herbs,
                         berries, and nuts.</p>
                 </a>
-                <a class="category" href="item.html">
+                <a class="category" href="item.html?category=cities">
                     <h2>Cities and Towns</h2>
                     <img class="image" src="https://vildmad.dk/application/files/3314/9796/4854/Byen-fuld-ret.jpg"
                         alt="town">
@@ -68,13 +88,27 @@
         </article>
 
         <article id="picture_wheel">
-            <h1>Herb library</h1>
-            <div class="item_container">
-                <template id="item_list_template">
-                    <a href="item.html"><img class="item"
-                            src="https://vildmad.dk/application/files/9414/9036/4754/dovnaelde.jpg" alt=""></a>
-                </template>
+            <div class="search_header">
+                <h1>Herbs</h1>
+                <form class="searchbar top" action="action_page.php">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit"><img src="img/🦆 icon _magnifying glass_.svg" alt="search"></button>
+                </form>
             </div>
+            <div class="wheel">
+                <a class="left button" onclick="left()"><img src="img/Vector 5.svg" alt="left"></a>
+                <div class="item_container">
+                    <template id="item_list_template">
+                        <button onclick="hej()" class="item_button"><img class="item"
+                                src="https://vildmad.dk/application/files/9414/9036/4754/dovnaelde.jpg" alt=""></button>
+                    </template>
+                </div>
+                <a class="right button" onclick="right()"><img src="img/Vector 4.svg" alt="right"></a>
+            </div>
+            <form class="searchbar bottom" action="action_page.php">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><img src="img/🦆 icon _magnifying glass_.svg" alt="search"></button>
+            </form>
         </article>
 
         <article id="item">
@@ -95,9 +129,9 @@
 
             <div class="item_deep_info">
                 <div class="item_header">
-                    <h3>H3</h3>
-                    <h3>H3</h3>
-                    <h3>H3</h3>
+                    <h3 class="clickable">Nature</h3>
+                    <h3 class="clickable">Sensory</h3>
+                    <h3 class="clickable">Kitchen</h3>
                 </div>
                 <div class="info_sections">
                     <div class="info_section">
@@ -174,5 +208,6 @@
 </body>
 
 <script src="js/item.js"></script>
+<script src="js/index.js"></script>
 
 </html>
