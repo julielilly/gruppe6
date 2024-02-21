@@ -136,14 +136,13 @@ header ul li a {
   color: var(--green);
 }
 
-<<<<<<< HEAD
 a:hover {
   color: black;
 }
 
 header .Logo {
   width: 100px;
-=======
+}
 .logo {
   height: 2.5rem;
 }
@@ -193,5 +192,4 @@ header .Logo {
 }
 .menu ul li {
   padding-bottom: 1.5rem;
->>>>>>> 43b8c428c23b9168153c9ea5d5a1308f5b417bbc
 }
