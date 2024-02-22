@@ -42,7 +42,7 @@ function showItem(item, index) {
   copy.querySelector(".item").src = item.image;
   copy.querySelector(".item_button").onclick = function () {
     updateChosenItem(item);
-    hej(item);
+    hop(item);
   };
 
   //ændre indhold på item
@@ -63,7 +63,7 @@ function showItem(item, index) {
 }
 
 // Funktion til at håndtere klik på item
-function hej(item) {
+function hop(item) {
   console.log(item.index);
   let width = document.querySelector(".item_container").scrollWidth;
   console.log(width);
