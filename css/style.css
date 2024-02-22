@@ -39,7 +39,7 @@ a {
 }
 
 body {
-  margin-top: 6rem;
+  margin-top: 4rem;
 }
 
 /* footer */
@@ -118,7 +118,7 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem;
+  padding: 1rem 2rem;
 }
 
 header ul {
@@ -134,11 +134,12 @@ header ul li {
 }
 header ul li a {
   color: var(--green);
+  font-size: 1.2rem;
+  white-space: nowrap;
 }
 
 a:hover {
-  color: black;
-  font-size: 1.05rem;
+  opacity: 0.8;
 }
 
 .logo {

@@ -12,6 +12,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans&display=swap"
         rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/favicon.png" />
 </head>
 
 <body>
@@ -30,7 +31,7 @@
 
     <header class="mobile">
         <a href="index.html"><img src="img/logo.png" alt="logo" class="logo"></a>
-        <button class="hamburger">
+        <button class="hamburger" aria-label="hamburger">
             <img class="menu_icon" src="img/menu_icon.svg" alt="menu icon">
             <img class="close_icon" src="img/close_icon.svg" alt="close icon">
         </button>
@@ -54,7 +55,7 @@
                 aroma, and how to use them in the kitchen.</p>
             <div class="categories">
 
-                <a class="category" href="item.html?category=waterways">
+                <a class="category" href="item.html?category=waterways#picture_wheel">
                     <h2>Waterways</h2>
                     <img class="image" src="https://vildmad.dk/application/files/9214/9796/4852/Strandeng-color.jpg"
                         alt="beach">
@@ -62,7 +63,7 @@
                         lakes,
                         streams, and rivers, herbs and flowers grow.</p>
                 </a>
-                <a class="category" href="item.html?category=open">
+                <a class="category" href="item.html?category=open#picture_wheel">
                     <h2>Open land</h2>
                     <img class="image" src="https://vildmad.dk/application/files/4514/9796/4850/Hegnet-color.jpg"
                         alt="open land">
@@ -70,14 +71,14 @@
                         of
                         herbs, nuts, fruits, and berries. </p>
                 </a>
-                <a class="category" href="item.html?category=forests">
+                <a class="category" href="item.html?category=forests#picture_wheel">
                     <h2>Forests</h2>
                     <img class="image" src="https://vildmad.dk/application/files/3614/9796/4850/Lovskov-color.jpg"
                         alt="forest">
                     <p>In coniferous and deciduous forests, you’ll find mushrooms, edible leaves, shoots, herbs,
                         berries, and nuts.</p>
                 </a>
-                <a class="category" href="item.html?category=cities">
+                <a class="category" href="item.html?category=cities#picture_wheel">
                     <h2>Cities and Towns</h2>
                     <img class="image" src="https://vildmad.dk/application/files/3314/9796/4854/Byen-fuld-ret.jpg"
                         alt="town">
@@ -90,24 +91,29 @@
         <article id="picture_wheel">
             <div class="search_header">
                 <h1>Herbs</h1>
-                <form class="searchbar top" action="action_page.php">
+                <form class=" searchbar top">
                     <input type="text" placeholder="Search.." name="search">
-                    <button type="submit"><img src="img/🦆 icon _magnifying glass_.svg" alt="search"></button>
+                    <button aria-label="search" type="submit"><img src="img/🦆 icon _magnifying glass_.svg"
+                            alt="search"></button>
                 </form>
             </div>
             <div class="wheel">
-                <a class="left button" onclick="left()"><img src="img/Vector 5.svg" alt="left"></a>
+                <button aria-label="left scroll" class="left button" onclick="left()"><img src="img/Vector 5.svg"
+                        alt="left"></button>
                 <div class="item_container">
                     <template id="item_list_template">
-                        <button onclick="hej()" class="item_button"><img class="item"
-                                src="https://vildmad.dk/application/files/9414/9036/4754/dovnaelde.jpg" alt=""></button>
+                        <button aria-label="foragable item" onclick="hop()" class="item_button"><img class="item"
+                                src="https://vildmad.dk/application/files/9414/9036/4754/dovnaelde.jpg"
+                                alt="item"></button>
                     </template>
                 </div>
-                <a class="right button" onclick="right()"><img src="img/Vector 4.svg" alt="right"></a>
+                <button aria-label=" right scroll" class="right button" onclick="right()"><img src="img/Vector 4.svg"
+                        alt="right"></button>
             </div>
-            <form class="searchbar bottom" action="action_page.php">
+            <form class="searchbar bottom">
                 <input type="text" placeholder="Search.." name="search">
-                <button type="submit"><img src="img/🦆 icon _magnifying glass_.svg" alt="search"></button>
+                <button aria-label="searchbar" type="submit"><img src="img/🦆 icon _magnifying glass_.svg"
+                        alt="search"></button>
             </form>
         </article>
 
