@@ -141,11 +141,10 @@ a:hover {
   font-size: 1.05rem;
 }
 
-header .Logo {
-  width: 100px;
-}
 .logo {
-  height: 2.5rem;
+  height: 2.8rem;
+  display: block;
+  align-items: end;
 }
 
 /* burgermenu */
