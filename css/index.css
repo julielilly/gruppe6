@@ -24,6 +24,10 @@
   padding-top: 5%;
 }
 
+.front_image h3:hover {
+  opacity: 0.8;
+}
+
 .blomster_planet {
   padding-top: 3%;
   width: 700px;
