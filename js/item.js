@@ -25,6 +25,9 @@ function showData(items) {
   items = getFilteredItems(items);
   allItems = items;
   items.forEach(showItem);
+  if (window.location.href.includes("#")) {
+    window.location.href = window.location.href;
+  }
 }
 
 // Funktion til at vise enkelt item
